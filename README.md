@@ -67,7 +67,6 @@ CREATE DATABASE cleantimescaledb;
 
 4. Примените миграции:
 ```bash
-cd src/TimescaleWebAPI.API
 # Если команда выдаст ошибку, попробуйте запустить ее два раза подряд
 dotnet ef database update --project src/TimescaleWebAPI.Infrastructure --startup-project src/TimescaleWebAPI.API
 ```
