@@ -78,16 +78,3 @@ dotnet run --project src/TimescaleWebAPI.API
 ```
 
 6. Откройте Swagger UI: http://localhost:5011/swagger
-
-## Структура проекта
-
-TimescaleWebAPI/
-├── src/
-│   ├── TimescaleWebAPI.Domain/          # Сущности и интерфейсы домена
-│   ├── TimescaleWebAPI.Application/     # Сервисы, DTO, валидация
-│   ├── TimescaleWebAPI.Infrastructure/  # EF Core, репозитории, миграции
-│   └── TimescaleWebAPI.API/             # Контроллеры, middleware, Swagger
-├── tests/
-│   ├── TimescaleWebAPI.UnitTests/       # Юнит-тесты
-│   └── TimescaleWebAPI.IntegrationTests # Интеграционные тесты
-└── README.md
