@@ -78,3 +78,21 @@ dotnet run --project src/TimescaleWebAPI.API
 ```
 
 6. Откройте Swagger UI: http://localhost:5011/swagger
+
+## Тестирование
+
+### Unit-тесты
+
+### Запуск тестов
+
+```bash
+# Запуск всех unit-тестов
+dotnet test tests/TimescaleWebAPI.UnitTests
+
+# Запуск класса тестов
+dotnet test --filter "ValueTests"
+dotnet test --filter "CsvValidatorTests"
+
+# Запуск с детальным выводом
+dotnet test --verbosity normal
+```
